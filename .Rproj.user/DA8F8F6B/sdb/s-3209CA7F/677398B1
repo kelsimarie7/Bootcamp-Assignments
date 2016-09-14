@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "for(ii in 1:9){cat(\"\\n\")ii),}\nii\nii<-1:9\nii\nfor(ii in 1:9){\n  cat(\"\\n\")\n  if (ii==9){\n    cat(\"*\")\n   }\n  }\n#n is enter  #need } before cat statment\n#exercise2\nfor(ii in 1:9){\n  cat(\"*\")\n  if (ii!=9){\n    cat(\"&\")\n  }\n}\n#exercise3\ndogs <- 10;\nfor (i in 1:5){\n  dogs <- dogs + 1; \n} \n#the initial is 10, the first loop adds 1 so 10+1=11,11+1=12, 12+1=13,13+1=14, 14+1=15 for the last loop\nmeatloaf <- 0; \nfor (i in 5:9){\n  meatloaf <- meatloaf - i + 1;\n  cat(meatloaf) \n#the first loop is 0-5+1= -4, -4-6+1=-9,-9-7+1=-15,-15-8+1=-22,last loop -22-9+1=-30\n  bubbles <- 12;\n  for (i in -1:-4){\n    bubbles <- i;\n  }\n  #first loop starts with 12 and becomes -1, then -2, -3, ends with -4\n  \n  ",
+    "created" : 1473892455657.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "702445513",
+    "id" : "677398B1",
+    "lastKnownWriteTime" : 1473895941,
+    "last_content_update" : 1473895941354,
+    "path" : "~/GitHub/Bootcamp-Assignments/Assignment1-Day1.R",
+    "project_path" : "Assignment1-Day1.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
