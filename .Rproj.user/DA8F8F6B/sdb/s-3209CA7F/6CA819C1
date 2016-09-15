@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1473963415488.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "6CA819C1",
+    "lastKnownWriteTime" : 3419473789575321445,
+    "last_content_update" : 1473963415488,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "dz2b7f44vp",
+        "caption" : "virginica",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=virginica&cache_key=dz2b7f44vp",
+        "displayedObservations" : 50,
+        "environment" : "",
+        "object" : "virginica",
+        "totalObservations" : 50,
+        "variables" : 5
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

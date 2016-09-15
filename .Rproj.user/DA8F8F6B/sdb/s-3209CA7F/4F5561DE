@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1473963413363.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "4F5561DE",
+    "lastKnownWriteTime" : 6641721330631929716,
+    "last_content_update" : 1473963413363,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "tsu0my28n2",
+        "caption" : "setosa",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=setosa&cache_key=tsu0my28n2",
+        "displayedObservations" : 50,
+        "environment" : "",
+        "object" : "setosa",
+        "totalObservations" : 50,
+        "variables" : 5
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

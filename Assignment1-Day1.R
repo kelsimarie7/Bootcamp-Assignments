@@ -108,6 +108,22 @@ else{
 }
 }
 
+#plottingassignment begins here
+
+get_heights<-function(x){
+    heights<-rnorm(x,69,10)
+    return(mean (heights)) 
+}
+mean_heights_100<-rep(0,1000)
+for(i in 1:1000) 
+mean_heights_100[i]<-get_heights(100)
+}
+
+    mean_heights_1000<-rep(0,1000)
+    for(i in 1:1000) 
+      mean_heights_1000[i]<-get_heights(1000)
+  }
+  
 
     
     

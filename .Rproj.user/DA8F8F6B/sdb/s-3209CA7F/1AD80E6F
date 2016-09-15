@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "snpsDataFrame=read.table('hapmaps.txt',header=TRUE)\n\n\n#partA\ncompute_chisquare=function(x){\n  freq=sum(x,na.rm=TRUE)/(2.0*sum(!is.na(x)))\n  cnt0=sum(x==0,na.rm=TRUE)\n  cnt1=sum(x==1,na.rm=TRUE)\n  cnt2=sum(x==2,na.rm=TRUE)\n  obscnts=c(cnt0,cnt1,cnt2)\n  #print(obscnts)\n  n=sum(obscnts)\n  expcnts=c((1-freq)^2,2*freq*(1-freq),freq^2)*n\n  chisq=sum((obscnts-expcnts)^2/expcnts)\n  return(chisq)\n}\nsnps=as.matrix(snpsDataFrame)  #turns data frame into matrix\nchisqs=apply(snps,1,compute_chisquare)  #apply function (can for for instead)\npvals=pchisq(chisqs,1,lower.tail=FALSE)  #assigns pvals name to P values you just calculated\n#B\nsignifthres<-0.05\nsum(pvals<signifthres)\nlength(pvals)\n(sum(pvals<signifthres))/(length(pvals))#threshold of pvales divided by all of pavales\n\n\nsignifthres<-0.01\nsum(pvals<signifthres)\nlength(pvals)\n(sum(pvals<signifthres))/(length(pvals))\n\nsignifthres<-0.001\nsum(pvals<signifthres)\nlength(pvals)\n(sum(pvals<signifthres))/(length(pvals))\n\n\n#C\n\n\"num_pval\"<-length(pvals)  #4014  #shows how many we have (length) and assign new name\nnum_pval\n\n#D\n\n\"exp_pvals\"<- seq(1,num_pval,by=1)/(num_pval)  #possible pvalues divided by the total pvalues\nexp_pval\n\n#E\n\nsort_pvals<-sort(pvals, decreasing = FALSE)  #sorting all pvals smallest to largest\nsort_pvals\nhead(sort_pvals)\n\n#F\n\nlog_sort_pvals<-(-log10(sort_pvals))\nlog_exp_pvals<- (-log10(exp_pvals))\n\nlog_sort_pvals\nlog_exp_pvals\n\n#G\n\nplot(log_exp_pvals,log_sort_pvals, xlab=\"-log10(Expected P-value)\", ylab=\"-log10(observed P-value)\", pch=19)\nabline(0,1,h=5,col=2)\n\n",
+    "created" : 1473970613939.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3703916619",
+    "id" : "1AD80E6F",
+    "lastKnownWriteTime" : 1473976964,
+    "last_content_update" : 1473976964538,
+    "path" : "~/GitHub/Bootcamp-Assignments/lohmueller_R_homeworkexercise.R",
+    "project_path" : "lohmueller_R_homeworkexercise.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
