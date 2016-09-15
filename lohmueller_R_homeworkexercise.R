@@ -62,5 +62,31 @@ log_exp_pvals
 #G
 
 plot(log_exp_pvals,log_sort_pvals, xlab="-log10(Expected P-value)", ylab="-log10(observed P-value)", pch=19)
-abline(0,1,h=5,col=2)
+abline(0,1,h=5,col=2,lty=2,lwd=2)
 
+#############################
+#Part2
+
+#A
+zz<-read.table('phenotypes.txt',header=TRUE)  #findingdata, need header=T because it will read header as data (wrong)
+
+#B
+
+quantile(zz$glucose_mmolperL,.25) #  $pulls up what column to use , use quantile function to find 25% below
+#4.77
+
+#C
+
+quantile(zz$glucose_mmolperL,.75)  #always LESS, so greater than .25, less than .75
+
+#7.35
+
+#D
+
+hist(zz$glucose_mmolperL,main = "Glucose(mmol/L)")
+
+Lowtail<-quantile(zz$glucose_mmolperL,.25)
+Hightail<-quantile(zz$glucose_mmolperL,.75)
+
+abline(v=Lowtail,col=3,lwd=3)     #abline allows for you to create a new line, v= makes vertical, col is color of line, lwd is thickness of line
+abline(v=Hightail,col=5,lwd=3)
