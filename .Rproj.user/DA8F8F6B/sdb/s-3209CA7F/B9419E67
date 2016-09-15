@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1473979573409.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "B9419E67",
+    "lastKnownWriteTime" : 3419473789575321445,
+    "last_content_update" : 1473979573409,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "nh5tmgegoi",
+        "caption" : "ChickWeight",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=ChickWeight&cache_key=nh5tmgegoi",
+        "displayedObservations" : 578,
+        "environment" : "",
+        "object" : "ChickWeight",
+        "totalObservations" : 578,
+        "variables" : 4
+    },
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
