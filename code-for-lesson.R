@@ -224,7 +224,13 @@ plot(as.numeric(data$Time),data$weight, xlab='Time', ylab='Weight',
      pch=16,las=1,cex.axis=1.5,cex.lab=1.5) # same as above
 #5
 
+plot(NA, xlim=c(0,21),ylim=c(30,400))
 
+colors=rainbow(50)
+
+for(ID in 1:50) {
+  use.rows=ChickWeight$Chick==ID
+  lines (x=ChickWeight$Time[use.rows], y=ChickWeight$weight[use.rows],col=colors[ID]) }
 
 
 
