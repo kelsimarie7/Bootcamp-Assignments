@@ -192,9 +192,9 @@ TukeyHSD(anova1)
 
 dataTimeZero<-ChickWeight[data$Time==21,]
 boxplot(weight~Diet,data=dataTimeZero,xlab="Diet Type",ylab="Weight")
-anova1=aov(weight~Diet, data = dataTimeZero)
-summary(anova1)
-TukeyHSD(anova1)
+anova2=aov(weight~Diet, data = dataTimeZero)
+summary(anova2)
+TukeyHSD(anova2)
 
 #3
 

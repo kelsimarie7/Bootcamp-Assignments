@@ -120,12 +120,12 @@ mean_heights_100[i]<-get_heights(100)
 }
 
     mean_heights_1000<-rep(0,1000)
-    for(i in 1:1000) 
+    for(i in 1:1000) {
       mean_heights_1000[i]<-get_heights(1000)
   }
   
-
-    
-    
- 
-  
+bins<-seq(65,73,by=1)
+    counts_100<-hist(mean_heights_1000, breaks=bins)$counts
+    counts_100<-hist(mean_heights_1000,breaks = bins)$counts
+ barplot(rbind(counts_100,counts_100),col=c(2,4),beside=T,names.arg = seq(65,72,by=1),xlab="average height",ylab="count")
+  legend('topleft',c('n=100','n=1000'),col=c(2,4),lwd=4)
